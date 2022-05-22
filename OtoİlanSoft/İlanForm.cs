@@ -58,21 +58,21 @@ namespace OtoİlanSoft
 
         public void İlanbilgileriniyukle(İlan ilan)
         {
-            İlanlar.Marka = txtMarka.Text;
-            İlanlar.Seri = txtSeri.Text;
-            İlanlar.Model = txtModel.Text;
-            İlanlar.Ilan_bas = txtİlanbas.Text;
-            İlanlar.Yil = nmYil.Value;
-            İlanlar.KM = nmKM.Value;
-            İlanlar.Renk = txtRenk.Text;
-            İlanlar.Fiyat = nmFiyat.Value;
-            İlanlar.ililce = txtİl.Text;
-            İlanlar.Ilan_tarih = İlantarih.Value;
-            if (!string.IsNullOrEmpty(İlanlar.Resim))
+            ilan.Marka = txtMarka.Text;
+            ilan.Seri = txtSeri.Text;
+            ilan.Model = txtModel.Text;
+            ilan.Ilan_bas = txtİlanbas.Text;
+            ilan.Yil = nmYil.Value;
+            ilan.KM = nmKM.Value;
+            ilan.Renk = txtRenk.Text;
+            ilan.Fiyat = nmFiyat.Value;
+            ilan.ililce = txtİl.Text;
+            ilan.Ilan_tarih = İlantarih.Value;
+            if (!string.IsNullOrEmpty(ilan.Resim))
             {
                 pcResim.Load(ilan.Resim);
             }
-            İlanlar.Bilgi = txtBilgi.Text;
+            ilan.Bilgi = txtBilgi.Text;
         }
 
 
